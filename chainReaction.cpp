@@ -17,7 +17,8 @@ int round = 1;                                          //To count rounds
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    cout << "\033[1;31mbold red text\033[0m\n";
+    std::cout << "\t" ;
+    cout << "\033[1;31mCHAIN REACTION\033[0m\n";
     cout << "Enter the Number of players : ";
     std::cin >> playerCount;
     containerDisplay();                                 //Displays the container
