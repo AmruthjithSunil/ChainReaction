@@ -11,6 +11,7 @@ const int size = 6;
 int Box[size][size] = {};                               //Play Field
 int playerCount;                                        //Number of players
 int round = 1;                                          //To count rounds
+int winnerID = -1;
 
 #include "./allFunctions.cpp"
 
@@ -24,6 +25,10 @@ int main(int argc, char const *argv[]) {
     containerDisplay();                                 //Displays the container
     while (1) {
         play();                                         //each player gets a turn to play.
+        if(winnerID > -1){
+            break;
+        }
     }
+    cout << "\nPlayer " << winnerID << " wins\n";
     return 0;
 }
